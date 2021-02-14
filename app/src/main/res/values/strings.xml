@@ -1,5 +1,11 @@
 <resources>
+    <string name="marginStart">16dp</string>
+    <string name="question_title_textSize">24sp</string>
     <string name="app_name">测评：你离成功有多远？</string>
+    <string name="question_1_title">1. 你是否说谎？</string>
+    <string name="question_1_yes">是</string>
+    <string name="question_1_no">否</string>
+    <string name="question_2_title">2. 你是否打人？</string>
     <string name="edit_message">Enter a message</string>
     <string name="button_send">Send</string>
 </resources>

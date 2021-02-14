@@ -1,0 +1,4 @@
+<resources>
+    <dimen name="marginStart">16dp</dimen>
+    <dimen name="question_title_textSize">24sp</dimen>
+</resources>
