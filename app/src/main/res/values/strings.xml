@@ -6,6 +6,9 @@
     <string name="question_1_yes">是</string>
     <string name="question_1_no">否</string>
     <string name="question_2_title">2. 你是否打人？</string>
+    <string name="Question_Button_next_text">继 续</string>
+
+
     <string name="edit_message">Enter a message</string>
     <string name="button_send">Send</string>
 </resources>

@@ -1,4 +1,10 @@
 <resources>
-    <dimen name="marginStart">16dp</dimen>
-    <dimen name="question_title_textSize">24sp</dimen>
+    <dimen name="Question_marginStart">16dp</dimen>
+    <dimen name="Question_marginTop">16dp</dimen>
+    <dimen name="Question_textSize">24sp</dimen>
+    <dimen name="Question_RadioGroup_marginStart">36dp</dimen>
+    <dimen name="Question_RadioGroup_marginTop">8dp</dimen>
+    <dimen name="Question_RadioButton_marginStart">16dp</dimen>
+    <dimen name="Question_RadioButton_textSize">18sp</dimen>
+
 </resources>

@@ -11,11 +11,11 @@
         android:id="@+id/question1Title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/marginStart"
-        android:layout_marginLeft="@dimen/marginStart"
-        android:layout_marginTop="16dp"
+        android:layout_marginStart="@dimen/Question_marginStart"
+        android:layout_marginLeft="@dimen/Question_marginStart"
+        android:layout_marginTop="@dimen/Question_marginTop"
         android:text="@string/question_1_title"
-        android:textSize="@dimen/question_title_textSize"
+        android:textSize="@dimen/Question_textSize"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -23,46 +23,49 @@
         android:id="@+id/RadioGroupQuestion1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:layout_marginLeft="36dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="@dimen/Question_RadioGroup_marginStart"
+        android:layout_marginLeft="@dimen/Question_RadioGroup_marginStart"
+        android:layout_marginTop="@dimen/Question_RadioGroup_marginTop"
         android:orientation="horizontal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/question1Title">
 
         <RadioButton
+            android:id="@+id/RadioButtonAnswer1Yes"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/question_1_yes"
-            android:textSize="18sp" />
+            android:textSize="@dimen/Question_RadioButton_textSize" />
 
         <RadioButton
+            android:id="@+id/RadioButtonAnswer1No"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginLeft="16dp"
+            android:layout_marginStart="@dimen/Question_RadioButton_marginStart"
+            android:layout_marginLeft="@dimen/Question_RadioButton_marginStart"
             android:text="@string/question_1_no"
-            android:textSize="18sp" />
+            android:textSize="@dimen/Question_RadioButton_textSize" />
     </RadioGroup>
 
     <TextView
         android:id="@+id/question2Title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/marginStart"
-        android:layout_marginLeft="@dimen/marginStart"
-        android:layout_marginTop="16dp"
+        android:layout_marginStart="@dimen/Question_marginStart"
+        android:layout_marginLeft="@dimen/Question_marginStart"
+        android:layout_marginTop="@dimen/Question_marginTop"
         android:text="@string/question_2_title"
-        android:textSize="@dimen/question_title_textSize"
+        android:textSize="@dimen/Question_textSize"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/RadioGroupQuestion1" />
 
     <RadioGroup
+        android:id="@+id/radioGroup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:layout_marginLeft="36dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="@dimen/Question_RadioGroup_marginStart"
+        android:layout_marginLeft="@dimen/Question_RadioGroup_marginStart"
+        android:layout_marginTop="@dimen/Question_RadioGroup_marginTop"
         android:orientation="horizontal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/question2Title">
@@ -71,23 +74,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/question_1_yes"
-            android:textSize="18sp" />
+            android:textSize="@dimen/Question_RadioButton_textSize" />
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginLeft="16dp"
+            android:layout_marginStart="@dimen/Question_RadioButton_marginStart"
+            android:layout_marginLeft="@dimen/Question_RadioButton_marginStart"
             android:text="@string/question_1_no"
-            android:textSize="18sp" />
+            android:textSize="@dimen/Question_RadioButton_textSize" />
     </RadioGroup>
-
-
-
-
-
-
-
 
 
     <EditText
@@ -120,5 +116,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/editText" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:onClick="nextQuestions"
+        android:text="@string/Question_Button_next_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
