@@ -12,7 +12,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Helloworld1">
+        android:theme="@style/Theme.AppCompat">
         <activity
             android:name=".DisplayMessageActivity"
             android:parentActivityName=".MainActivity">
@@ -22,7 +22,10 @@
                 android:value=".MainActivity"
             />
         </activity>
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/Theme.James"
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
